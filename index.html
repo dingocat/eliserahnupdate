@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html ng-app="website">
+	<head>
+        <title>Elise Rahn</title>
+        <!-- <link rel="stylesheet" href="css/main.css"> -->
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/jquery.fullPage.css">
+        <link rel="stylesheet" type="text/css" href="css/main.css">
+        <script type="text/javascript" src="vendors/jquery-1.11.1.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+        <link href='http://fonts.googleapis.com/css?family=Fontdiner+Swanky' rel='stylesheet' type='text/css'>
+        <link href='http://fonts.googleapis.com/css?family=Jura:400,600' rel='stylesheet' type='text/css'>  
+	</head>
+	<body>
+		<div id="fullpage">
+			<div class="section">
+				<main>
+					<header>
+                            <a href="/index.html">Elise Rahn</a>
+                 	</header>
+                 	<div smooth-button class="container" ng-mouseenter="play()" ng-mouseleave="reverse()">
+                 		<div class="circle red" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+                 			<a href="/slide2">Web</a>
+                 		</div>
+				        <div class="circle orange"></div>
+				        <div class="circle yellow"></div>
+				        <div class="circle grey"></div>
+                 	</div>
+				    <div smooth-button class="container" ng-mouseenter="play()" ng-mouseleave="reverse()">
+				    	<div class="circle red" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+				    		<a href="/slide3">Design</a>
+				    	</div>
+				        <div class="circle orange"></div>
+				        <div class="circle yellow"></div>
+				        <div class="circle grey"></div>
+				    </div>
+				    <div smooth-button class="container" ng-mouseenter="play()" ng-mouseleave="reverse()">
+				    	<div class="circle red" style="transform: matrix(1, 0, 0, 1, 0, 0);">
+				    		<a href="/slide4">About</a>
+				    	</div>
+				        <div class="circle orange"></div>
+				        <div class="circle yellow"></div>
+				        <div class="circle grey"></div>
+				    </div>
+                    <!-- <h1>Web/Design/Art/Sound/Music/Ect</h1> -->
+                    <!-- <article>
+                        <p>Hi, I like to make things!  I graduated in 2012 from Kendall College of Art and Design with a degree in digital media.  Check out my site full of stuff I've made, or drop me a line at these places:<a href="/space/index.html">!</a></p>
+                    </article>
+                    <div id="me" class=""></div> -->
+                </main>
+			</div>
+			<div class="section">
+			    <div class="slide"> Slide 1 </div>
+			    <div class="slide"> Slide 2 </div>
+			    <div class="slide"> Slide 3 </div>
+			    <div class="slide"> Slide 4 </div>
+			</div>
+			<div class="section">
+			    <div class="slide"> Slide 1 </div>
+			    <div class="slide"> Slide 2 </div>
+			    <div class="slide"> Slide 3 </div>
+			    <div class="slide"> Slide 4 </div>
+			</div>
+			<div class="section">Some section</div>
+		</div>
+	</body>
+	<script type="text/ng-template" id="smooth-button.tmpl.html">
+        <div class="circle red"></div>
+        <div class="circle orange"></div>
+        <div class="circle yellow"></div>
+        <div class="circle grey"></div>
+    </script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script src="vendors/jquery.easings.min.js"></script>
+	<script type="text/javascript" src="vendors/jquery.slimscroll.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.13.1/TweenMax.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.3.0-rc.0/angular.min.js"></script>
+    <script src="js/app.js"></script>
+</html>

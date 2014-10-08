@@ -1,0 +1,80 @@
+main {
+    margin: 0 auto;
+    height: 500px;
+    width: 800px;
+    padding: 20px 40px 20px 40px;
+    margin-top: 50px;
+}
+@font-face {font-family:
+    'RaphaelIcons';
+    src:
+    url('../fonts/raphaelicons-webfont.eot');
+    src:
+    local('☺'), url('../fonts/raphaelicons-webfont.woff') format('woff'), url('../fonts/raphaelicons-webfont.ttf') format('truetype'), url('../fonts/raphaelicons-webfont.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+.icon {
+    font-weight: normal;
+    font-style: normal;
+    line-height: normal;
+    font-family: 'RaphaelIcons';
+    font-size: 1.3em;
+    position: relative;
+    top: 0.1em;
+    margin: 0px 5px 0px 5px;
+}
+.image {
+/*    border: 2px solid #8FC31F;*/
+    margin: 5px;
+    border-radius: 5px;
+    /*box-shadow: 1px 1px 1px black;*/
+}
+body {
+    font-family: 'jura', sans-serif;
+    font-weight: 600;
+    color: yellow;
+}
+
+/*~~~~~~~~~~~~~~~~~~nextlevelshit~~~~~~~~~~~~~~~~~~~~~*/
+
+header a {
+    text-decoration: none; 
+    font-size: 3.7em;;
+    color: yellow;
+    text-shadow: black 2px 3px;
+}
+header a:hover {
+    text-shadow: black 3px 4px;
+    color: white;
+}
+/*~~~~~~~~~~~~~~~~~~~~~~~Circles~~~~~~~~~~~~~~~~~~~~~~~~*/
+.container {
+    cursor: pointer;
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    margin: 80px;
+}
+.circle {
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	position: absolute;
+}
+
+.yellow {
+	background-color: #ffff00;
+}
+
+.orange {
+	background-color: white;
+}
+
+.red {
+	background-color: blue;
+}
+
+.grey {
+	background-color: green;
+}
