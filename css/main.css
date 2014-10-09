@@ -1,3 +1,6 @@
+a {
+    color: white;
+}
 main {
     margin: 0 auto;
     height: 500px;
@@ -35,24 +38,29 @@ body {
     font-weight: 600;
     color: yellow;
 }
+article {
 
+}
 /*~~~~~~~~~~~~~~~~~~nextlevelshit~~~~~~~~~~~~~~~~~~~~~*/
 
 header a {
     text-decoration: none; 
     font-size: 3.7em;;
     color: yellow;
-    text-shadow: black 2px 3px;
+    text-shadow: grey 2px 3px;
 }
 header a:hover {
-    text-shadow: black 3px 4px;
-    color: white;
+    text-shadow: white 3px 4px;
+    color: #ffc100;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~Circles~~~~~~~~~~~~~~~~~~~~~~~~*/
+#circleholder{
+
+}
 .container {
     cursor: pointer;
     display: inline-block;
-    height: 100px;
+    height: 150px;
     width: 100px;
     margin: 80px;
 }
@@ -63,18 +71,19 @@ header a:hover {
 	position: absolute;
 }
 
-.yellow {
-	background-color: #ffff00;
+.colorbottom {
+	background-color: #ffc100;
 }
 
-.orange {
-	background-color: white;
+.colormiddlest {
+	background-color: #5DF863;
 }
 
-.red {
-	background-color: blue;
+.colormiddle {
+	background-image: url(/img/bgcirclegif1.gif);
 }
 
-.grey {
-	background-color: green;
+.colortop {
+	background-color: #455edb;
+    display: "yo!";
 }

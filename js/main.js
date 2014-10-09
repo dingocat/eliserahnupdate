@@ -1,6 +1,6 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
-        verticalCentered: true,
+        verticalCentecolorbottom: true,
         resize : true,
         sectionsColor : ['#ccc', '#455edb', '#5DF863', '#ffc100'],
         anchors:['firstSlide', 'secondSlide'],
@@ -37,4 +37,5 @@ $(document).ready(function() {
         afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex){},
         onSlideLeave: function(anchorLink, index, slideIndex, direction){}
     });
+    $('.container').hover()
 });
