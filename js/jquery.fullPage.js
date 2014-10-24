@@ -23,7 +23,7 @@
 			'navigationTooltips': [],
 			'slidesNavigation': false,
 			'slidesNavPosition': 'bottom',
-			'controlArrowColor': '#fff',
+			'controlArrowColor': '#000',
 			'loopBottom': false,
 			'loopTop': false,
 			'loopHorizontal': true,

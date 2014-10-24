@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         verticalCentecolorbottom: true,
         resize : true,
-        sectionsColor : ['#ccc', '#455edb', '#5DF863', '#ffc100'],
+        sectionsColor : ['#ccc', '#455edb', '#5DF863', '#f8635d', '#ffc100'],
         anchors:['firstSlide', 'secondSlide'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',
@@ -18,8 +18,8 @@ $(document).ready(function() {
         autoScrolling: true,
         scrollOverflow: false,
         css3: false,
-        paddingTop: '3em',
-        paddingBottom: '10px',
+        // paddingTop: '3em',
+        // paddingBottom: '10px',
         normalScrollElements: '#element1, .element2',
         normalScrollElementTouchThreshold: 5,
         keyboardScrolling: true,
@@ -39,3 +39,6 @@ $(document).ready(function() {
     });
     $('.container').hover()
 });
+// $(document).ready(function() {
+//     $('.circle').effect('shake', 100);
+// });
