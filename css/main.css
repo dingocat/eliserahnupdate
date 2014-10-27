@@ -80,38 +80,81 @@ header a:hover {
     color: yellow;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~Circles~~~~~~~~~~~~~~~~~~~~~~~~*/
-#circleholder{
-
+#navContainer{
+    width: 100%;
 }
-.container {
+.circleContainer {
     cursor: pointer;
     display: inline-block;
     height: 150px;
     width: 100px;
-    margin: 80px;
-}
-.circle {
-	border-radius: 50%;
-	width: 150px;
-	height: 150px;
-	position: absolute;
+    margin: 50px;
 }
 
-.colorbottom {
+/*.circle:before {
+    background-color: #455edb;
+    width: 9em;
+    height: 9em;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle:after {
+    background-color: #ffc100;
+    width: 7em;
+    height: 7em;
+    border-radius: 50%;
+    position: absolute;
+}
+.circle:before:hover {
+    width: 10em;
+    height: 10em;
+    -webkit-animation: width height 0.3s ease;
+    -moz-animation: width height 0.3s ease;
+    -o-animation: width height 0.3s ease;
+    animation: width height 0.3s ease;
+}
+.circle:hover {
+    width: 9em;
+    height: 9em;
+   -webkit-animation: width height 0.3s ease;
+    -moz-animation: width height 0.3s ease;
+    -o-animation: width height 0.3s ease;
+    animation: width height 0.3s ease; 
+}*/
+.circlebottom {
+    border-radius: 50%;
+    width: 9em;
+    height: 9em;
 	background-color: #ffc100;
+    position: absolute;
 }
 
-.colormiddlest {
+/*.circlemiddlest {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
 	background-color: #5DF863;
-}
+    position: absolute;
+}*/
 
-.colormiddle {
+.circlemiddle {
+    border-radius: 50%;
+    width: 8em;
+    height: 8em;
 	background-image: url(/img/bgcirclegif1.gif);
+    position: absolute;
+    top: 10px;
+    left: 10px;
 }
 
-.colortop {
+.circletop {
+    border-radius: 50%;
+    width: 7em;
+    height: 7em;
 	background-color: #455edb;
-    content: "yo!";
+    position: relative;
+    top: 15px;
+    left: 15px;
 }
 @-webkit-keyframes wiggle
 {
@@ -150,7 +193,7 @@ header a:hover {
     -o-animation: wiggle 0.3s ease infinite;
     animation: wiggle 0.3s ease infinite;
 }
-/*~~~~~~~~~~~~~~~~~~sectionz~~~~~~~~~~~~~~~~~~~~~*/
+/*~~~~~~~~~~~~~~~~~~sectionz~~~~~~~~~~~~~~~~~~~~~
 
 #section1 {
 
@@ -191,10 +234,14 @@ header a:hover {
 #poster1 {
     background-image: url('/img/poster.png');
     background-size: contain;
-    position: absolute;
-    top: -50px;
-    max-width: 100%;
-    height: auto;
+    position: relative;
+    left: -100px;
+    top: -100px;
+    max-width: 794px;
+    min-width: 397px;
+    max-height: 1226px; 
+    min-height: 613px;
+    margin: 0 auto; 
 }
 #cover1 {
     background-image: url('/img/hipstercover1.png');
@@ -203,7 +250,7 @@ header a:hover {
     background-image: url('/img/sojourn.png');
 }
 #logo1 {
-    background-image: url('/img/exologo.png');
+    background-image: url('/img/exologo2.png');
     background-size: contain;
     background-repeat: no-repeat;
     height: 517px;
