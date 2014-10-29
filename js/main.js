@@ -2,8 +2,8 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         verticalCentecolorbottom: true,
         resize : true,
-        sectionsColor : ['#ccc', '#455edb', '#5DF863', '#f8635d', '#ffc100'],
-        anchors:['firstSlide', 'secondSlide'],
+        sectionsColor : ['#ccc', '#455edb', '#39393A', '#f8635d', '#ffc100'],
+        anchors:['firstSlide', 'secondSlide', 'thirdSlide'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',
         menu: false,
@@ -39,6 +39,3 @@ $(document).ready(function() {
     });
     $('.container').hover()
 });
-// $(document).ready(function() {
-//     $('.circle').effect('shake', 100);
-// });

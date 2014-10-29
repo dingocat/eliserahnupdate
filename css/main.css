@@ -2,13 +2,23 @@ a {
     color: white;
     text-decoration: none;
 }
+p {
+    text-shadow: #2B2B2B 1px 1px 2px;
+}
+h1 {
+    text-shadow: #2B2B2B 1px 1px 2px;
+}
+.h1UpTop {
+    position: absolute;
+    top: 50px;
+    z-index: 1000;
+}
 .mainsection {
     position: relative;
-    top: -50px;
     margin: 0 auto;
     height: 80%;
     width: 70%;
- /*   padding: 20px 40px 20px 40px;*/
+    /*padding: 20px 40px 20px 40px;*/
 }
 @font-face {font-family:
     'RaphaelIcons';
@@ -46,37 +56,81 @@ a {
 body {
     font-family: 'jura', sans-serif;
     font-weight: 600;
+    color: #35c15b;
+}
+article p {
     color: yellow;
 }
-article {
-
+#topFade {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0));
+}
+#bottomFade {
+    z-index: 100;
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
 }
 nav {
     font-family: 'RaphaelIcons';
-    font-size: 1.3em;
+    font-size: 1.5em;
     position: fixed;
     text-align: right;
     right: 50px;
     bottom: 50px;
-    z-index: 70;
+    z-index: 125;
     height: 20px;
     width: 100%;  
 }
 nav a:hover {
-    color: yellow;
-    text-shadow: grey 2px 2px;
+    color: #35c15b;
+    text-shadow: #2B2B2B 1px 1px 2px;
+}
+#arrowcontainer {
+    position: absolute;
+    left: 50%;
+    bottom: -75px;
+    margin-left: -29px;
+}
+#arrowdown {
+    background: url("/img/arrowdown.png") top left no-repeat;
+    position: relative;
+    display: inline-block;
+    height: 30px;
+    width: 50px;
+    -webkit-animation: mymove 1.75s ease-in-out infinite;
+}
+@keyframes mymove {
+    0%   { padding-bottom: 50px;}
+    50%  { padding-bottom: 75px;}
+    100% { padding-bottom: 50px;}
 }
 
+@-webkit-keyframes mymove {
+    0%   { padding-bottom: 50px;}
+    50%  { padding-bottom: 75px;}
+    100% { padding-bottom: 50px;}
+}
 /*~~~~~~~~~~~~~~~~~~nextlevelshit~~~~~~~~~~~~~~~~~~~~~*/
 
 header a {
     text-decoration: none; 
     font-size: 3.7em;;
     color: yellow;
-    text-shadow: grey 2px 3px;
+    text-shadow: #2B2B2B 2px 2px 2px;
 }
 header a:hover {
-    text-shadow: grey 1px 2px;
+    text-shadow: #2B2B2B 1px 1px 2px;
     color: yellow;
 }
 /*~~~~~~~~~~~~~~~~~~~~~~~Circles~~~~~~~~~~~~~~~~~~~~~~~~*/
@@ -91,36 +145,6 @@ header a:hover {
     margin: 50px;
 }
 
-/*.circle:before {
-    background-color: #455edb;
-    width: 9em;
-    height: 9em;
-    border-radius: 50%;
-    position: absolute;
-}
-.circle:after {
-    background-color: #ffc100;
-    width: 7em;
-    height: 7em;
-    border-radius: 50%;
-    position: absolute;
-}
-.circle:before:hover {
-    width: 10em;
-    height: 10em;
-    -webkit-animation: width height 0.3s ease;
-    -moz-animation: width height 0.3s ease;
-    -o-animation: width height 0.3s ease;
-    animation: width height 0.3s ease;
-}
-.circle:hover {
-    width: 9em;
-    height: 9em;
-   -webkit-animation: width height 0.3s ease;
-    -moz-animation: width height 0.3s ease;
-    -o-animation: width height 0.3s ease;
-    animation: width height 0.3s ease; 
-}*/
 .circlebottom {
     border-radius: 50%;
     width: 9em;
@@ -128,14 +152,6 @@ header a:hover {
 	background-color: #ffc100;
     position: absolute;
 }
-
-/*.circlemiddlest {
-    border-radius: 50%;
-    width: 8em;
-    height: 8em;
-	background-color: #5DF863;
-    position: absolute;
-}*/
 
 .circlemiddle {
     border-radius: 50%;
@@ -181,13 +197,13 @@ header a:hover {
     100% {transform: rotateZ(2deg);}
 }
 
-.wiggle:hover {
+.wiggleIcon:hover {
     -webkit-animation: wiggle 0.2s ease infinite;
     -moz-animation: wiggle 0.2s ease infinite;
     -o-animation: wiggle 0.2s ease infinite;
     animation: wiggle 0.2s ease infinite;
 }
-.wiggleMiddle:hover {
+.wiggle:hover {
     -webkit-animation: wiggle 0.3s ease infinite;
     -moz-animation: wiggle 0.3s ease infinite;
     -o-animation: wiggle 0.3s ease infinite;
@@ -200,18 +216,17 @@ header a:hover {
 }
 #section2 {
     /*background-image: url(/img/background1.png);
-    background-size: cover;*/
-}
+    background-size: cover;
+}*/
+
 .slide {
     padding: 100px;
 }
 .website {
-    height: 390px;
+    height: 385px;
     width: 720px;
-}
-.poster {
-    width: 220px;
-    height: 350px;
+    margin-left: 50px;
+    margin-bottom: 50px;
 }
 .fullPageImage {
     background-size: contain;
@@ -219,10 +234,11 @@ header a:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
-.logo {
-    height: 220px;
-    width: 300px;
+.description {
+
 }
+/*~~~~~~~~~~~~~~~~~~~~Section 1~~~~~~~~~~~~~~~~~~~~*/
+
 #exohelixsite {
     background-image: url('/img/exohelixsite.png');
     background-size: cover;
@@ -231,44 +247,80 @@ header a:hover {
     background-image: url('/img/arsllc.png');
     background-size: cover;
 }
+
+/*~~~~~~~~~~~~~~~~~~~Section 2~~~~~~~~~~~~~~~~~~~~~~*/
+.shadow {
+    box-shadow: #2B2B2B 2px 2px 2px;
+}
+.draggable {
+    position: absolute;
+}
+.draggable:hover {
+    transform: rotate(-5deg);
+}
 #poster1 {
     background-image: url('/img/poster.png');
     background-size: contain;
-    position: relative;
-    left: -100px;
-    top: -100px;
-    max-width: 794px;
-    min-width: 397px;
-    max-height: 1226px; 
-    min-height: 613px;
-    margin: 0 auto; 
+    height: 613px;
+    width: 397px;
+    transform: rotate(-10deg);
+    top: 82px;
+    left: 168px;
 }
 #cover1 {
     background-image: url('/img/hipstercover1.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 250px;
+    width: 250px;
+    top: 280px;
+    left: 739px;
+    transform: rotate(5deg);
 }
 #cover2 {
     background-image: url('/img/sojourn.png');
-}
-#logo1 {
-    background-image: url('/img/exologo2.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 517px;
-    width: 667px;
+    height: 300px;
+    width: 300px;
+    top: 304px;
+    left: 455px;
+    transform: rotate(-5deg);
+}
+#logo1 {
+    background-image: url('/img/exologo4.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 279px;
+    width: 400px;
+    left: 492px;
+    top: 13px;
 }
 #infographic {
     background-image: url('/img/indymap2.png');
-    padding: 6% 0 0 0;
-    /*width: 573px;
-    height: 431px;*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 573px;
+    height: 431px;
+    left: 780px;
+    top: 80px;
+    transform: rotate(10deg);
 }
+
+/*~~~~~~~~~~~~~~~~~~Section 3~~~~~~~~~~~~~~~~~~~~~~*/
+
 #space {
     background-image: url('/img/space.png');
     background-size: contain;
+    width: 717px;
+    height: 388px;
 }
 #cooper {
     background-image: url('/img/cooperzteethgrnz.png');
     background-size: contain;
+    position: relative;
     width: 500px;
     height: 312px;
+    margin: auto;
+    left: -100px;
 }
