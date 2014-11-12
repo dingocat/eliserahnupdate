@@ -18,7 +18,6 @@ h1 {
     margin: 0 auto;
     height: 80%;
     width: 70%;
-    /*padding: 20px 40px 20px 40px;*/
 }
 @font-face {font-family:
     'RaphaelIcons';
@@ -133,45 +132,7 @@ header a:hover {
     text-shadow: #2B2B2B 1px 1px 2px;
     color: yellow;
 }
-/*~~~~~~~~~~~~~~~~~~~~~~~Circles~~~~~~~~~~~~~~~~~~~~~~~~*/
-#navContainer{
-    width: 100%;
-}
-.circleContainer {
-    cursor: pointer;
-    display: inline-block;
-    height: 150px;
-    width: 100px;
-    margin: 50px;
-}
 
-.circlebottom {
-    border-radius: 50%;
-    width: 9em;
-    height: 9em;
-	background-color: #ffc100;
-    position: absolute;
-}
-
-.circlemiddle {
-    border-radius: 50%;
-    width: 8em;
-    height: 8em;
-	background-image: url(/img/bgcirclegif1.gif);
-    position: absolute;
-    top: 10px;
-    left: 10px;
-}
-
-.circletop {
-    border-radius: 50%;
-    width: 7em;
-    height: 7em;
-	background-color: #455edb;
-    position: relative;
-    top: 15px;
-    left: 15px;
-}
 @-webkit-keyframes wiggle
 {
     0% {-webkit-transform: rotateZ(2deg);}
@@ -209,25 +170,15 @@ header a:hover {
     -o-animation: wiggle 0.3s ease infinite;
     animation: wiggle 0.3s ease infinite;
 }
-/*~~~~~~~~~~~~~~~~~~sectionz~~~~~~~~~~~~~~~~~~~~~
-
-#section1 {
-
+.clickable:hover {
+    cursor: pointer;
 }
-#section2 {
-    /*background-image: url(/img/background1.png);
-    background-size: cover;
-}*/
+/*~~~~~~~~~~~~~~~~~~sectionz~~~~~~~~~~~~~~~~~~~~~*/
 
 .slide {
     padding: 100px;
 }
-.website {
-    height: 385px;
-    width: 720px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-}
+
 .fullPageImage {
     background-size: contain;
     background-attachment: fixed;
@@ -235,18 +186,67 @@ header a:hover {
     background-repeat: no-repeat;
 }
 .description {
-
+    position: relative;
+    height: 200px;
+    width: 500px;
+    margin: auto;
 }
 /*~~~~~~~~~~~~~~~~~~~~Section 1~~~~~~~~~~~~~~~~~~~~*/
 
 #exohelixsite {
-    background-image: url('/img/exohelixsite.png');
+    position: absolute;
+ /*   background-image: url('/img/exohelixsite.png');*/
     background-size: cover;
+    background-repeat: no-repeat;
+    top: -100px;
+    left: -100px;
+}
+#exohelixsite:after {
+    background-color: #2B2B2B;
 }
 #arsllc {
-    background-image: url('/img/arsllc.png');
+    position: absolute;
+   /* background-image: url('/img/arsllc.png');*/
     background-size: cover;
+    background-repeat: no-repeat;
+    left: 50px;
+    top: 50px;
 }
+#arsllc:after {
+    background-color: #857A87;
+}
+
+        /*~~~~~~~~~~CSS3D~~~~SITES~~~~~~~~~~~*/
+.site {
+    display: inline-block;
+/*    box-shadow: 5px 5px 20px #333;*/
+    margin: 10px;
+}
+
+.site img { vertical-align: middle; }
+.website {
+    height: 385px;
+    width: 720px;
+    transition: .3s ease-out;
+}
+.website:hover {
+    height: 395px;
+    width: 730px;
+    transform: rotate(2deg);
+    box-shadow: #2B2B2B 5px 5px 5px;
+}
+
+#siteDescriptions {
+    position: absolute;
+bottom: -60px;
+text-align: center;
+padding: 5px 5px 5px 5px;
+width: 710px;
+height: 50px;
+margin: auto 0;
+opacity: 0;
+}
+
 
 /*~~~~~~~~~~~~~~~~~~~Section 2~~~~~~~~~~~~~~~~~~~~~~*/
 .shadow {
@@ -254,9 +254,6 @@ header a:hover {
 }
 .draggable {
     position: absolute;
-}
-.draggable:hover {
-    transform: rotate(-5deg);
 }
 #poster1 {
     background-image: url('/img/poster.png');
@@ -271,18 +268,18 @@ header a:hover {
     background-image: url('/img/hipstercover1.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 250px;
-    width: 250px;
-    top: 280px;
-    left: 739px;
+    height: 300px;
+    width: 300px;
+    top: 228px;
+    left: 830px;
     transform: rotate(5deg);
 }
 #cover2 {
     background-image: url('/img/sojourn.png');
     background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 300px;
+    height: 350px;
+    width: 350px;
     top: 304px;
     left: 455px;
     transform: rotate(-5deg);
@@ -300,13 +297,32 @@ header a:hover {
     background-image: url('/img/indymap2.png');
     background-size: contain;
     background-repeat: no-repeat;
-    width: 573px;
-    height: 431px;
-    left: 780px;
-    top: 80px;
+    width: 860px;
+    height: 644px;
+    left: 670px;
+    top: 70px;
     transform: rotate(10deg);
 }
-
+#gamecover {
+    background-image: url('/img/gamecover.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 561px;
+    left: 650px;
+    top: 200px;
+    transform: rotate(5deg);
+}
+#logo2 {
+    background-image: url('/img/abstractionlogo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 290px;
+    height: 149px;
+    left: 100px;
+    top: 300px;
+    transform: rotate(-15deg);
+}
 /*~~~~~~~~~~~~~~~~~~Section 3~~~~~~~~~~~~~~~~~~~~~~*/
 
 #space {
