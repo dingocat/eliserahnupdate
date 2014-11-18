@@ -2,7 +2,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         verticalCentecolorbottom: true,
         resize : true,
-        sectionsColor : ['#ccc', '#455edb', '#39393A', '#f8635d', '#ffc100'],
+        sectionsColor : ['#ccc', '#455edb', '#39393A', '#35c15b'],
         anchors:['firstSlide', 'secondSlide', 'thirdSlide'],
         scrollingSpeed: 700,
         easing: 'easeInQuart',

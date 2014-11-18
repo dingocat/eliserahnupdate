@@ -12,8 +12,12 @@ $('.site').hover(function () {
 $('#exohelixsite').click(function() {
 	$('.descriptionExo').css('opacity', '1');
 	$('.descriptionArs').css('opacity', '0');
+	$('.descriptionExo').css('z-index', '500');
+	$('.descriptionArs').css('z-index', '0');
 });
 $('#arsllc').click(function () {
 	$('.descriptionArs').css('opacity', '1');
 	$('.descriptionExo').css('opacity', '0');
+	$('.descriptionArs').css('z-index', '500');
+	$('.descriptionExo').css('z-index', '0');
 })

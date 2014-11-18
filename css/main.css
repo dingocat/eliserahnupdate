@@ -2,15 +2,20 @@ a {
     color: white;
     text-decoration: none;
 }
+a:hover {
+    color: #35c15b;
+    text-decoration: none;
+    text-shadow: #2B2B2B 2px 2px 3px;
+}
 p {
     text-shadow: #2B2B2B 1px 1px 2px;
 }
 h1 {
-    font-family: permanent-marker, sans-serif;
+    font-family: 'Jura', sans-serif;
     text-shadow: #2B2B2B 1px 1px 2px;
 }
 header {
-    font-family: permanent-marker, sans-serif;
+    font-family: 'Jura', sans-serif;
     font-size: 1em;
 }
 .h1UpTop {
@@ -23,6 +28,7 @@ header {
     margin: 0 auto;
     height: 80%;
     width: 70%;
+    left: -60px;
 }
 @font-face {font-family:
     'RaphaelIcons';
@@ -63,9 +69,9 @@ header {
 
 }
 body {
-    font-family: averia-sans-libre, sans-serif;
-    font-weight: 300;
-    color: #35c15b;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 500;
+    color: yellow;
     font-size: 1.5em;
 }
 article p {
@@ -103,7 +109,7 @@ nav {
     width: 100%;  
 }
 nav a:hover {
-    color: #35c15b;
+    color: yellow;
     text-shadow: #2B2B2B 1px 1px 2px;
 }
 #arrowcontainer {
@@ -273,7 +279,7 @@ header a:hover {
     height: 613px;
     width: 397px;
     transform: rotate(-10deg);
-    top: 82px;
+    top: 120px;
     left: 168px;
 }
 #cover1 {
@@ -342,6 +348,7 @@ header a:hover {
     background-size: contain;
     width: 717px;
     height: 388px;
+    margin-left: 100px;
 }
 #cooper {
     background-image: url('/img/cooperzteethgrnz.png');
